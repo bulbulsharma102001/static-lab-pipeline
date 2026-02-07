@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "bulbulsharma102001/bulbul-ecomm"
+        DOCKER_IMAGE = "bbsharma102001/bulbul-ecomm"
         TAG = "555"
         BRANCH = "main"
     }
