@@ -43,11 +43,17 @@ pipeline {
             }
         }
 
+        stage('Deploy to Kubernetes') {
+            steps {
+                bat "kubectl apply -f k8s-deployment.yaml"
+            }
+        }
+
     }
 
     post {
         success {
-            echo '✅ Docker Image Successfully Built and Pushed'
+            echo '✅ Docker Image Built, Pushed & Deployed to Kubernetes'
         }
 
         failure {
