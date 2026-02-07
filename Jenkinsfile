@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "bbsharma102001/bulbul-ecomm"
-        TAG = "555"
+        TAG = "556"
         BRANCH = "main"
     }
 
